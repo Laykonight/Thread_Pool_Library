@@ -6,3 +6,4 @@
 !.gitignore
 !*/
 !*.java
+!pom.xml
