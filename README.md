@@ -2,6 +2,8 @@
 
 The Thread Pool library is a Java implementation providing a robust and efficient thread pool mechanism for concurrent task execution. It offers various features to manage and control the execution of tasks, including dynamic thread management, task prioritization, pausing and resuming operations, and graceful termination.
 
+This library utilizes a waitable queue implementation for managing tasks within the thread pool.
+
 ## Features
 
 - **Task Submission**: Allows users to submit tasks to the thread pool for execution. Tasks can be either `Runnable` or `Callable`, with optional priority settings.
@@ -12,6 +14,10 @@ The Thread Pool library is a Java implementation providing a robust and efficien
 - **Pausing and Resuming**: Offers methods for pausing and resuming thread pool operations, providing flexibility in controlling task execution.
 - **Non-blocking Shutdown**: Supports non-blocking termination of the thread pool, ensuring graceful shutdown of all threads.
 - **Blocking Termination**: Provides methods for blocking termination of the thread pool, allowing the calling thread to wait until all threads are closed, with optional timeout settings.
+
+## Waitable Queue
+
+The Thread Pool library utilizes my waitable queue implementation for managing tasks within the thread pool.
 
 ## Methods
 
